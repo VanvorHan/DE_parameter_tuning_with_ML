@@ -1,0 +1,24 @@
+>>>>>>>>>>> GC >>>>>>>>>>
+Number of unreachable objects collected by GC: 0
+
+>>> Creating the dataset of threshold = 0.1 >>>
+[106329, 16624, 24447]
+>>> Dataset Creation Done >>>
+Traceback (most recent call last):
+  File "model_train.py", line 75, in <module>
+    X_train, X_test, X_val, y_train, y_test, y_val = preprocess_dataset(dataset_DE.create_dataset(), pca_n=pca_n)
+  File "/Users/vanvorhan/Desktop/Honours Project/DE/model_train/pop/dataset_processing.py", line 36, in preprocess_dataset
+    X = pca.fit_transform(X)
+  File "/Users/vanvorhan/Tools/anaconda3/envs/tf/lib/python3.7/site-packages/sklearn/decomposition/_pca.py", line 407, in fit_transform
+    U, S, Vt = self._fit(X)
+  File "/Users/vanvorhan/Tools/anaconda3/envs/tf/lib/python3.7/site-packages/sklearn/decomposition/_pca.py", line 459, in _fit
+    return self._fit_truncated(X, n_components, self._fit_svd_solver)
+  File "/Users/vanvorhan/Tools/anaconda3/envs/tf/lib/python3.7/site-packages/sklearn/decomposition/_pca.py", line 585, in _fit_truncated
+    random_state=random_state,
+  File "/Users/vanvorhan/Tools/anaconda3/envs/tf/lib/python3.7/site-packages/sklearn/utils/extmath.py", line 400, in randomized_svd
+    random_state=random_state,
+  File "/Users/vanvorhan/Tools/anaconda3/envs/tf/lib/python3.7/site-packages/sklearn/utils/extmath.py", line 237, in randomized_range_finder
+    Q, _ = linalg.lu(safe_sparse_dot(A, Q), permute_l=True)
+  File "/Users/vanvorhan/Tools/anaconda3/envs/tf/lib/python3.7/site-packages/scipy/linalg/decomp_lu.py", line 216, in lu
+    p, l, u, info = flu(a1, permute_l=permute_l, overwrite_a=overwrite_a)
+KeyboardInterrupt
